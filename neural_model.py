@@ -3,6 +3,11 @@ import csv
 import os
 import numpy
 from sklearn.model_selection import train_test_split
+from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import KFold
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import average_precision_score
+from sklearn.metrics import classification_report
 
 class neural_model():
     def __init__(self):
@@ -10,12 +15,44 @@ class neural_model():
         self.train_y = []
 
     def train(self):
-        x_train, x_test, y_train, y_test = train_test_split(self.train_x, self.train_y, test_size=0.9, random_state=0)
+        kf = KFold(n_splits=5)
+        # x_train, x_test, y_train, y_test = train_test_split(self.train_x, self.train_y, test_size=0.9, random_state=0)
         mlp = MLPClassifier(hidden_layer_sizes=(50, 50), max_iter=1000, alpha=1e-4,
                             solver='sgd', random_state=1)
 
-        mlp.fit(x_train, y_train)
-        print("Training set score: %f" % mlp.score( x_test, y_test))
+        list_pred_y = []
+        list_truth_y = []
+        for train_indices, test_indices in kf.split(self.train_x):
+            print("test indices: ", test_indices)
+            mlp.fit(self.train_x[train_indices], self.train_y[train_indices])
+            predict_y = mlp.predict(self.train_x[test_indices])
+            print("predict_y: ", predict_y)
+            list_pred_y += list(predict_y)
+
+            # list_truth_y += list(self.train_y[test_indices])
+            for i in self.train_y[test_indices]:
+                temp = numpy.matrix(i)
+                temp = temp.tolist()
+                list_truth_y.append(temp[0][0])
+
+            # list_pred_y.append(predict_y)
+            # list_truth_y.append(self.train_y[test_indices])
+            # print(list_truth_y)
+            # print("mlp score ", mlp.score(self.train_x[test_indices], self.train_y[test_indices]))
+
+        print("list_pred_y: ", list_pred_y)
+        print("list_truth_y: ", list_truth_y)
+        confusion = confusion_matrix(list_pred_y, list_truth_y)
+        print(classification_report(list_pred_y, list_truth_y))
+        average_precision = average_precision_score(list_pred_y, list_truth_y)
+
+        print('Average precision-recall score: {0:0.2f}'.format(
+            average_precision))
+
+        # mlp.fit(x_train, y_train)
+        # scores = cross_val_score(mlp, self.train_x, self.train_y, cv=5)
+        # print("Training set score: %f" % mlp.score( x_test, y_test))
+        # print("Training set score: ", scores)
 
     def read_one_input_file(self, file_name):
         table = csv.reader(open(file_name, newline=''), delimiter=',')
