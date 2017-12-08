@@ -1,15 +1,0 @@
---2017-11-05 17:27:05--  https://www.google.com/search?biw=1280
-Resolving www.google.com... 172.217.5.100, 2607:f8b0:4005:808::2004
-Connecting to www.google.com|172.217.5.100|:443... connected.
-HTTP request sent, awaiting response... 302 Found
-Location: https://www.google.com/webhp?biw=1280 [following]
---2017-11-05 17:27:05--  https://www.google.com/webhp?biw=1280
-Reusing existing connection to www.google.com:443.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [text/html]
-Saving to: 'search?biw=1280'
-
-search?biw=1280            [<=>                        ]       0  --.-KB/s               search?biw=1280            [ <=>                       ]   4.97K  --.-KB/s    in 0.001s  
-
-2017-11-05 17:27:06 (6.52 MB/s) - 'search?biw=1280' saved [11762]
-
