@@ -2,35 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70a18010-d6e5-4c13-9941-cf9e50f96c16" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2017-11-21-19.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NASDAQ_ GOOGL - Google Search.htm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NASDAQ_ GOOGL - Google Search_files/api.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NASDAQ_ GOOGL - Google Search_files/cb=gapi(1).loaded_0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NASDAQ_ GOOGL - Google Search_files/cb=gapi.loaded_0" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NASDAQ_ GOOGL - Google Search_files/googlelogo_color_120x44dp.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NASDAQ_ GOOGL - Google Search_files/rs=AA2YrTuOvQ_qIcpji0vB5LaYqxDICKj-_A" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NASDAQ_ GOOGL - Google Search_files/rs=ACT90oHZA7AGIk9mIoDqlQSIXfzCIMpypA" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NASDAQ_ GOOGL - Google Search_files/rs=ACT90oHnZkw9LAQ0OaLzTtx3naqlyWcIdw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NASDAQ_ GOOGL - Google Search_files/saved_resource.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/NASDAQ_ GOOGL - Google Search_files/widget.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/googleFinanceAPI.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/input/score.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logistic_regression.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/neural_model.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/processData.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/related_keyword.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/search?biw=1280" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sum_sentiments.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/truth/2017-11-21.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/truth/2017-11-22.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/truth/2017-11-24.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/truth/2017-11-27.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/truth/ground_truth.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tweet_score.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitterAPI.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/wget-log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/yahooAPI.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/codes/neural_model.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,8 +18,8 @@
       <file leaf-file-name="neural_model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codes/neural_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="209">
+              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -99,6 +71,7 @@
         <option value="$PROJECT_DIR$/processData.py" />
         <option value="$PROJECT_DIR$/input/score.csv" />
         <option value="$PROJECT_DIR$/neural_model.py" />
+        <option value="$PROJECT_DIR$/codes/neural_model.py" />
       </list>
     </option>
   </component>
@@ -325,24 +298,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="neural_model" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Course Project" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/neural_model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="sum_sentiments" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -361,14 +316,32 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="neural_model" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Course Project" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/neural_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Python.twitterAPI" />
       <item index="1" class="java.lang.String" itemvalue="Python.processData" />
       <item index="2" class="java.lang.String" itemvalue="Python.googleAPI" />
       <item index="3" class="java.lang.String" itemvalue="Python.yahooAPI" />
       <item index="4" class="java.lang.String" itemvalue="Python.client" />
-      <item index="5" class="java.lang.String" itemvalue="Python.neural_model" />
-      <item index="6" class="java.lang.String" itemvalue="Python.sum_sentiments" />
+      <item index="5" class="java.lang.String" itemvalue="Python.sum_sentiments" />
+      <item index="6" class="java.lang.String" itemvalue="Python.neural_model" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -459,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512693003346</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="get into formate">
+      <created>1512693892890</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1512693892890</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -469,7 +449,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17043619" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41815236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41815236" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -500,7 +480,8 @@
     <MESSAGE value="add cross validation" />
     <MESSAGE value="nn" />
     <MESSAGE value="add logistic" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logistic" />
+    <MESSAGE value="get into formate" />
+    <option name="LAST_COMMIT_MESSAGE" value="get into formate" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -802,8 +783,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codes/neural_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="209">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
