@@ -8,6 +8,9 @@ from sklearn.model_selection import KFold
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import average_precision_score
 from sklearn.metrics import classification_report
+from sklearn.metrics import roc_auc_score
+from sklearn.metrics import roc_curve
+import matplotlib.pyplot as plt
 
 class neural_model():
     def __init__(self):
@@ -21,13 +24,17 @@ class neural_model():
                             solver='sgd', random_state=1)
 
         list_pred_y = []
+        list_pred_y_roc = []
         list_truth_y = []
         for train_indices, test_indices in kf.split(self.train_x):
-            print("test indices: ", test_indices)
+            # print("test indices: ", test_indices)
             mlp.fit(self.train_x[train_indices], self.train_y[train_indices])
             predict_y = mlp.predict(self.train_x[test_indices])
-            print("predict_y: ", predict_y)
+            predict_y_roc = mlp.predict_proba(self.train_x[test_indices])[:, 1]
+            # print("predict_y: ", predict_y)
             list_pred_y += list(predict_y)
+            list_pred_y_roc += list(predict_y_roc)
+            # print("list(predict_y_roc): ", predict_y_roc)
 
             # list_truth_y += list(self.train_y[test_indices])
             for i in self.train_y[test_indices]:
@@ -48,11 +55,26 @@ class neural_model():
 
         print('Average precision-recall score: {0:0.2f}'.format(
             average_precision))
+        # print("list_pred_y_roc: ", list_pred_y_roc)
 
         # mlp.fit(x_train, y_train)
         # scores = cross_val_score(mlp, self.train_x, self.train_y, cv=5)
         # print("Training set score: %f" % mlp.score( x_test, y_test))
         # print("Training set score: ", scores)
+
+        logit_roc_auc = roc_auc_score(list_truth_y, list_pred_y)
+        fpr, tpr, thresholds = roc_curve(list_truth_y, list_pred_y_roc)
+        plt.figure()
+        plt.plot(fpr, tpr, label='Neural Network (area = %0.2f)' % logit_roc_auc)
+        plt.plot([0, 1], [0, 1], 'r--')
+        plt.xlim([0.0, 1.0])
+        plt.ylim([0.0, 1.05])
+        plt.xlabel('False Positive Rate')
+        plt.ylabel('True Positive Rate')
+        plt.title('Receiver operating characteristic')
+        plt.legend(loc="lower right")
+        plt.savefig('Log_ROC')
+        plt.show()
 
     def read_one_input_file(self, file_name):
         table = csv.reader(open(file_name, newline=''), delimiter=',')

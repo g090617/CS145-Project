@@ -1,14 +1,14 @@
 import numpy
 import pandas as pd
-import statsmodels.api as sm
+# import statsmodels.api as sm
 import matplotlib.pyplot as plt
-from patsy import dmatrices
+# from patsy import dmatrices
 from sklearn.linear_model import LogisticRegression
 from sklearn import metrics
 from sklearn import datasets
 from sklearn.model_selection import KFold
 from sklearn.feature_selection import RFE
-import statsmodels.api as sm
+# import statsmodels.api as sm
 from sklearn import model_selection
 from sklearn.model_selection import cross_val_score
 from sklearn.cross_validation import train_test_split
@@ -38,12 +38,15 @@ class logistic_model():
         #logreg.fit(x_train, y_train)
         list_pred_y = []
         list_truth_y = []
+        list_pred_y_roc = []
         for train_indices, test_indices in kf.split(self.train_x):
             print("test indices: ", test_indices)
             logreg.fit(self.train_x[train_indices], self.train_y[train_indices])
             predict_y = logreg.predict(self.train_x[test_indices])
             print("predict_y: ", predict_y)
             list_pred_y += list(predict_y)
+            predict_y_roc = logreg.predict_proba(self.train_x[test_indices])[:, 1]
+            list_pred_y_roc += list(predict_y_roc)
 
             # list_truth_y += list(self.train_y[test_indices])
             for i in self.train_y[test_indices]:
@@ -76,6 +79,21 @@ class logistic_model():
         # scoring = 'accuracy'
         # results = model_selection.cross_val_score(modelCV, x_train, y_train, cv=kfold, scoring=scoring)
         # print("3-fold cross validation average accuracy: %.3f" % (results.mean()))
+
+        logit_roc_auc = roc_auc_score(list_truth_y, list_pred_y)
+        fpr, tpr, thresholds = roc_curve(list_truth_y, list_pred_y_roc)
+        plt.figure()
+        plt.plot(fpr, tpr, label='Logistic regression (area = %0.2f)' % logit_roc_auc)
+        plt.plot([0, 1], [0, 1], 'r--')
+        plt.xlim([0.0, 1.0])
+        plt.ylim([0.0, 1.05])
+        plt.xlabel('False Positive Rate')
+        plt.ylabel('True Positive Rate')
+        plt.title('Receiver operating characteristic')
+        plt.legend(loc="lower right")
+        plt.savefig('Log_ROC')
+        plt.show()
+
     def read_one_input_file(self, file_name):
         table = csv.reader(open(file_name, newline=''), delimiter=',')
         for row in table:
@@ -105,8 +123,8 @@ class logistic_model():
 if __name__ == '__main__':
     temp = logistic_model()
     # temp.train()
-    temp.read_one_input_file("input/score.csv")
-    temp.read_one_truth_file("truth/ground_truth.csv")
+    temp.read_one_input_file("../data/input/score.csv")
+    temp.read_one_truth_file("../data/truth/ground_truth.csv")
     temp.train()
 
 # data = pd.read_csv('tweet_score_actual.csv', header=0)
