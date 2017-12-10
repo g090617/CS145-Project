@@ -20,7 +20,7 @@ class neural_model():
     def train(self):
         kf = KFold(n_splits=5)
         # x_train, x_test, y_train, y_test = train_test_split(self.train_x, self.train_y, test_size=0.9, random_state=0)
-        mlp = MLPClassifier(hidden_layer_sizes=(10, 2), alpha=1e-3,
+        mlp = MLPClassifier(hidden_layer_sizes=(10,2), alpha=1e-3,
                             solver='sgd', random_state=42)
 
         list_pred_y = []

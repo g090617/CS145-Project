@@ -31,7 +31,7 @@ class logistic_model():
     def train(self):
         kf = KFold(n_splits=5)
         #x_train, x_test, y_train, y_test = train_test_split(self.train_x, self.train_y, test_size=0.3, random_state=0)
-        logreg = LogisticRegression(C=1e5)
+        logreg = LogisticRegression(C=1e6)
         #X_shuf, Y_shuf = shuffle(x_train, y_train)
         # print(x_train)
         # print(y_train)

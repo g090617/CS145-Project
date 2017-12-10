@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70a18010-d6e5-4c13-9941-cf9e50f96c16" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codes/logistic_regression.py" afterPath="$PROJECT_DIR$/codes/logistic_regression.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codes/neural_model.py" afterPath="$PROJECT_DIR$/codes/neural_model.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,11 +16,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="neural_model.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="neural_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codes/neural_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+            <state relative-caret-position="100">
+              <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -30,8 +31,8 @@
       <file leaf-file-name="logistic_regression.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codes/logistic_regression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-697">
-              <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="154">
+              <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -83,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="svm.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="svm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codes/svm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="128">
               <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
@@ -143,11 +144,11 @@
         <option value="$PROJECT_DIR$/neural_model.py" />
         <option value="$PROJECT_DIR$/codes/crawl_Oct.py" />
         <option value="$PROJECT_DIR$/codes/svm.py" />
-        <option value="$PROJECT_DIR$/codes/logistic_regression.py" />
         <option value="$PROJECT_DIR$/GetOldTweets-python-master/crawl_Oct.py" />
         <option value="$PROJECT_DIR$/codes/processData.py" />
         <option value="$PROJECT_DIR$/data/input/score.csv" />
         <option value="$PROJECT_DIR$/codes/neural_model.py" />
+        <option value="$PROJECT_DIR$/codes/logistic_regression.py" />
       </list>
     </option>
   </component>
@@ -255,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.neural_model">
+  <component name="RunManager" selected="Python.logistic_regression">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -629,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512863031905</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="improve nn">
+      <created>1512937772562</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1512937772562</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -674,7 +682,8 @@
     <MESSAGE value="get into format" />
     <MESSAGE value="change process data" />
     <MESSAGE value="update score and input file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update score and input file" />
+    <MESSAGE value="improve nn" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve nn" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -781,16 +790,6 @@
     <entry file="file://$PROJECT_DIR$/codes/GetOldTweets-python-master/got3/crawl_Oct.py" />
     <entry file="file://$PROJECT_DIR$/codes/GetOldTweets-python-master/Main.py" />
     <entry file="file://$PROJECT_DIR$/codes/GetOldTweets-python-master/crawl_Oct.py" />
-    <entry file="file://$PROJECT_DIR$/codes/svm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GetOldTweets-python-master/crawl_Oct.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -819,16 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes/logistic_regression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-697">
-          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/input/score.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
@@ -839,10 +828,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codes/neural_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+        <state relative-caret-position="100">
+          <caret line="22" column="52" lean-forward="false" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes/logistic_regression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="39" column="15" lean-forward="true" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes/svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
