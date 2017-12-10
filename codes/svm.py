@@ -24,9 +24,9 @@ class svm_model():
         # x_train, x_test, y_train, y_test = train_test_split(self.train_x, self.train_y, test_size=0.9, random_state=0)
         # svr_rbf = SVC(kernel='rbf', C=1e3, gamma=0.1)
         # svr_lin = SVC(kernel='linear', C=1e3)
-        # svr_poly = SVC(kernel='poly', C=1e3, degree=2)
+        clf = SVC(kernel='poly', C=1e3, degree=2, gamma=30, probability=True)
         #clf = svm.SVC()
-        clf = svm.SVC(kernel='linear', C=1.0, probability=True)
+        #clf = svm.SVC(kernel='linear', C=1e3, probability=True)
         list_pred_y = []
         list_truth_y = []
         list_pred_y_roc = []

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="70a18010-d6e5-4c13-9941-cf9e50f96c16" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codes/logistic_regression.py" afterPath="$PROJECT_DIR$/codes/logistic_regression.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codes/neural_model.py" afterPath="$PROJECT_DIR$/codes/neural_model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codes/svm.py" afterPath="$PROJECT_DIR$/codes/svm.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -87,8 +86,8 @@
       <file leaf-file-name="svm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codes/svm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="52">
+              <caret line="26" column="58" lean-forward="false" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
               </folding>
@@ -143,12 +142,12 @@
         <option value="$PROJECT_DIR$/input/score.csv" />
         <option value="$PROJECT_DIR$/neural_model.py" />
         <option value="$PROJECT_DIR$/codes/crawl_Oct.py" />
-        <option value="$PROJECT_DIR$/codes/svm.py" />
         <option value="$PROJECT_DIR$/GetOldTweets-python-master/crawl_Oct.py" />
         <option value="$PROJECT_DIR$/codes/processData.py" />
         <option value="$PROJECT_DIR$/data/input/score.csv" />
         <option value="$PROJECT_DIR$/codes/neural_model.py" />
         <option value="$PROJECT_DIR$/codes/logistic_regression.py" />
+        <option value="$PROJECT_DIR$/codes/svm.py" />
       </list>
     </option>
   </component>
@@ -256,7 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.logistic_regression">
+  <component name="RunManager" selected="Python.svm">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -637,7 +636,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512937772562</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="improve logistic">
+      <created>1512938485272</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1512938485272</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -683,7 +689,8 @@
     <MESSAGE value="change process data" />
     <MESSAGE value="update score and input file" />
     <MESSAGE value="improve nn" />
-    <option name="LAST_COMMIT_MESSAGE" value="improve nn" />
+    <MESSAGE value="improve logistic" />
+    <option name="LAST_COMMIT_MESSAGE" value="improve logistic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -848,8 +855,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codes/svm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="52">
+          <caret line="26" column="58" lean-forward="false" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
           </folding>
