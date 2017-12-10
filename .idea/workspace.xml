@@ -4,8 +4,6 @@
     <list default="true" id="70a18010-d6e5-4c13-9941-cf9e50f96c16" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/codes/neural_model.py" afterPath="$PROJECT_DIR$/codes/neural_model.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/input/score.csv" afterPath="$PROJECT_DIR$/data/input/score.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/truth/ground_truth.csv" afterPath="$PROJECT_DIR$/data/truth/ground_truth.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +18,8 @@
       <file leaf-file-name="neural_model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/codes/neural_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+            <state relative-caret-position="145">
+              <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -68,7 +66,7 @@
       <file leaf-file-name="score.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/input/score.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1257">
+            <state relative-caret-position="1275">
               <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
               <folding />
             </state>
@@ -624,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512792520666</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update score and input file">
+      <created>1512863031905</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1512863031905</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -668,7 +673,8 @@
     <MESSAGE value="get into formate" />
     <MESSAGE value="get into format" />
     <MESSAGE value="change process data" />
-    <option name="LAST_COMMIT_MESSAGE" value="change process data" />
+    <MESSAGE value="update score and input file" />
+    <option name="LAST_COMMIT_MESSAGE" value="update score and input file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -805,14 +811,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/input/score.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1257">
-          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/truth/ground_truth.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-785">
@@ -831,10 +829,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/input/score.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codes/neural_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="29" column="51" lean-forward="true" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+        <state relative-caret-position="145">
+          <caret line="27" column="25" lean-forward="true" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
